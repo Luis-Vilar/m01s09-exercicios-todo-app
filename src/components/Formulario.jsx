@@ -7,7 +7,7 @@ export const Formulario = ({ onSubmit }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit(todosContext.addToDo(textElementRef.current.value));
+    todosContext.addToDo(textElementRef.current.value);
     textElementRef.current.value = "";
   };
 

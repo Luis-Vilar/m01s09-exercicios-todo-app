@@ -6,6 +6,6 @@ export const useToDos = () => {
   if (context) {
     return context;
   } else {
-    return alert("useToDos deb ser usado dentro de  ToDoProvider");
+    throw new Error("useToDos deb ser usado dentro de  ToDoProvider");
   }
 };
